@@ -31,7 +31,7 @@
         </div>
         <div class="flex-item second">
             <h2>Let's do this!</h2>
-            <form action="" method="">
+            <form action="/action_page.php" method="">
                 <fieldset>
                     <legend><strong>Personal Details</strong></legend>
 
@@ -40,13 +40,13 @@
                             <div class="label">
                                 <label for="firstName">First Name<span class="req">*</span></label>
                             </div>
-                            <input type="text" placeholder="First Name" name="fName" required>
+                            <input id="f_name" type="text" placeholder="First Name" name="fName" required>
                         </div>
                         <div class="input" id="lastName">
                             <div class="label">
                                 <label for="lastName">Last Name<span class="req">*</span></label>
                             </div>
-                            <input type="text" placeholder="Last Name" name="lName" required>
+                            <input id="l_name" type="text" placeholder="Last Name" name="lName" required>
                         </div>
                     </div>
                 </fieldset>
@@ -55,11 +55,11 @@
                     <legend><strong>Contact Details</strong></legend>
                     <div class="input">
                         <div class="label"><label for="email">Email<span class="req">*</span></label></div>
-                        <input type="email" placeholder="example@example.com" name="email" required>
+                        <input id="email" type="email" placeholder="example@example.com" name="email" required>
                     </div>
                     <div class="input">
                         <div class="label"><label for="phone">Phone Number<span class="req">*</span></label></div>
-                        <input type="tel" placeholder="+977 9876543210" name="phone" required>
+                        <input id="tel" type="tel" placeholder="+977 9876543210" name="phone" required>
                     </div>
                 </fieldset>
                 
@@ -68,22 +68,26 @@
                     <div class="pas-col">
                         <div class="input">
                             <div class="label"><label for="password">Password<span class="req">*</span></label></div>
-                            <input type="password" name="password" placeholder="Password" required>
+                            <input id="password" type="password" name="password" placeholder="Password" required minlength="8">
                         </div>
                         <div class="input" id="pasCon">
                             <div class="label"><label for="conPassword">Confirm Password<span class="req">*</span></label></div>
-                            <input type="password" name="conPass" placeholder="Confirm Password" required>
+                            <input id="confirm_password" type="password" name="conPass" placeholder="Confirm Password" required minlength="8">
                         </div>
                     </div>
                 </fieldset>
             </form>
         </div>
+        
         <div class="flex-item third">
-            <button type="submit">Create Account</button>
+            <p class="errMsg"></p>
+            <button id="btn_submit" type="submit" value="submit">Create Account</button>
             <div class="content">
                 <p class="haveAnAc">Already have an account? <span class="logOpt"><a href="./login.html">Log in</a></span></p>
             </div>
         </div>
     </div>
+
+    <script src="main.js"></script>
 </body>
 </html>

@@ -91,7 +91,7 @@ label{
 }
 
 input{
-    width: 100%;
+    width: 95%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -200,4 +200,10 @@ button:hover{
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: orange; }
+  }
+
+
+  .errMsg{
+    margin-left: 10px;
+    color: red;
   }
