@@ -74,6 +74,9 @@ body{
     margin-top: 0;
     padding: 1px;
 }
+.third{
+    text-align: justify;
+}
 
 span.req{
     color: red;
@@ -123,3 +126,33 @@ div.label{
     margin-right: 200px;
 }
 
+button{
+    background-color: rgb(0, 150, 136);
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 17px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(0, 123, 123);
+    color: #ffffff;
+}
+
+.haveAnAc{
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.logOpt>a{
+    text-decoration: none;
+    font-weight: 800;
+    color: rgb(0, 150, 136);
+}
+
+.logOpt>a:hover{
+    color: rgb(0, 123, 123);
+}
