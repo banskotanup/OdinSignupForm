@@ -58,17 +58,20 @@ body{
 
 .flex-item {
     width: 100%;
-    height: calc(30px, 50px, 20px);
     text-align: center;
     margin: 5px 10px;
 }
 .first{
     text-align: justify;
-    margin-top: 5%;
-    font-size: 14px;
+    margin-top: 5px;
     padding: 1px;
     margin-bottom: 0;
 }
+
+.first>h2{
+    margin-top: 0;
+}
+
 .second{
     text-align: justify;
     margin-top: 0;
@@ -94,7 +97,17 @@ input{
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    outline: none;
 }
+
+input:focus{
+    border: 2px solid blue;
+}
+
+input:valid{
+    border: 2px solid green;
+}
+
 
 .input{
     margin: 10px;
@@ -121,6 +134,15 @@ div.label{
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+
+.first-col>.input>input:focus, .pas-col>.input>input:focus{
+    border: 2px solid blue;
+}
+
+.first-col>.input>input:valid, .pas-col>.input>input:valid{
+    border: 2px solid green;
+}
+
 
 .first-col>#lastName, .pas-col>#pasCon{
     margin-right: 200px;
@@ -156,3 +178,26 @@ button:hover{
 .logOpt>a:hover{
     color: rgb(0, 123, 123);
 }
+
+.text {
+    overflow: hidden;
+    border-right: .13em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
