@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+<body>
+    <div class="img">
+        <div class="logo">
+            <img class="odin-img" src="./images/odin." alt="">
+        </div>
+        <div class="img-content">
+            <h2 class="text">ODIN SIGN UP</h2>
+        </div>
+        <div class="img-desc">
+            <p class="img-info">photo by <em>Halie West</em> on
+                <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">unsplash</a>
+            </p>
+        </div>
+    </div>
+    <div class="form">
+        <div class="flex-item first">
+            <h2>Get Started Today!</h2>
+            <p>Embark on your journey to success with just a few clicks. Sign up now to unlock resources, tools, and opportunities that will help you achieve your goals.</p>
+            <p>Don’t wait—your future starts here!</p>
+            <h4>Click "Sign Up" to get started.</h4>
+        </div>
+        <div class="flex-item second">
+            <h2>Let's do this!</h2>
+            <form action="./form.com" method="post">
+                <fieldset>
+                    <legend><strong>Personal Details</strong></legend>
+
+                    <div class="first-col">
+                        <div class="input">
+                            <div class="label">
+                                <label for="firstName">First Name<span class="req">*</span></label>
+                            </div>
+                            <input type="text" placeholder="First Name" name="fName" required>
+                        </div>
+                        <div class="input" id="lastName">
+                            <div class="label">
+                                <label for="lastName">Last Name<span class="req">*</span></label>
+                            </div>
+                            <input type="text" placeholder="Last Name" name="lName" required>
+                        </div>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend><strong>Contact Details</strong></legend>
+                    <div class="input">
+                        <div class="label"><label for="email">Email<span class="req">*</span></label></div>
+                        <input type="email" placeholder="example@example.com" name="email" required>
+                    </div>
+                    <div class="input">
+                        <div class="label"><label for="phone">Phone Number<span class="req">*</span></label></div>
+                        <input type="tel" placeholder="+977 9876543210" name="phone" required>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend><strong>Secure with your password</strong></legend>
+                    <div class="pas-col">
+                        <div class="input">
+                            <div class="label"><label for="password">Password<span class="req">*</span></label></div>
+                            <input type="password" name="password" id="" placeholder="Password" required>
+                        </div>
+                        <div class="input" id="pasCon">
+                            <div class="label"><label for="conPassword">Confirm Password<span class="req">*</span></label></div>
+                            <input type="password" name="conPass" id="" placeholder="Confirm Password" required>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="flex-item third">
+            hi
+        </div>
+    </div>
+</body>
+</html>

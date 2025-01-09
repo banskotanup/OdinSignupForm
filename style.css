@@ -1,0 +1,125 @@
+body{
+    font-family: 'Josefin slab', serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.img{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background-image: url('./images/img.jpg');
+    background-size: cover;
+    flex-direction: row-reverse;
+}
+
+.img-desc{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: end;
+    margin-right: 10px;
+}
+
+.img-info, .img-info>a{
+    color: black;
+}
+
+.img-content{
+    color: white;
+    height: fit-content;
+    width: 50%;
+    margin-right: 20%;
+    margin-top: 35%;
+}
+
+.text{
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.form{
+    background-color: rgb(227, 250, 250);
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 5px;
+}
+
+.flex-item {
+    width: 100%;
+    height: calc(30px, 50px, 20px);
+    text-align: center;
+    margin: 5px 10px;
+}
+.first{
+    text-align: justify;
+    margin-top: 5%;
+    font-size: 14px;
+    padding: 1px;
+    margin-bottom: 0;
+}
+.second{
+    text-align: justify;
+    margin-top: 0;
+    padding: 1px;
+}
+
+span.req{
+    color: red;
+}
+
+
+label{
+    width: 10%;
+}
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.input{
+    margin: 10px;
+}
+
+fieldset{
+    margin: 10px;
+}
+
+div.label{
+    font-weight: 600;
+}
+
+.first-col, .pas-col{
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-col>.input>input, .pas-col>.input>input{
+    width: 170%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.first-col>#lastName, .pas-col>#pasCon{
+    margin-right: 200px;
+}
+
